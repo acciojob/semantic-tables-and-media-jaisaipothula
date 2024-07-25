@@ -7,8 +7,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
         }
         table {
             width: 100%;
@@ -18,64 +22,72 @@
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
         th {
-            background-color: #f2f2f2;
-        }
-        h2 {
-            margin: 20px 0;
+            background-color: #f4f4f4;
         }
         ol {
-            padding-left: 20px;
+            margin: 0;
+            padding: 0;
+            list-style-type: decimal;
         }
-        .media-item {
-            margin-bottom: 20px;
+        ol li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Table with semantic structure -->
     <table>
         <thead>
             <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
+                <th style="width: 200px;">First Column</th>
+                <th style="width: 600px;">Middle Column</th>
+                <th style="width: 200px;">Last Column</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>Alice</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>Text Content</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Bob</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>Text Content</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Charlie</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>Text Content</td>
+                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
             </tr>
         </tbody>
     </table>
 
+    <!-- Heading for the list -->
     <h2>List of medias</h2>
 
+    <!-- Ordered List with media items -->
     <ol>
-        <li class="media-item">
-            <img src="https://picsum.photos/id/123/200/300" alt="Sample image">
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
         </li>
-        <li class="media-item">
+        <li>
             <video controls>
                 <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </li>
-        <li class="media-item">
+        <li>
             <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
             </audio>
         </li>
     </ol>
+
 </body>
 </html>
