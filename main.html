@@ -3,75 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media List</title>
+    <title>Media List and Table</title>
     <style>
-        /* Example CSS to ensure visibility and layout */
-        .imageContainer img {
-            max-width: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
         }
         table {
-            border-collapse: collapse;
             width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
         th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
-        .green {
-            background-color: green;
-            color: white;
+        th {
+            background-color: #f2f2f2;
         }
-        .blue {
-            background-color: blue;
-            color: white;
+        h2 {
+            margin: 20px 0;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .media-item {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>HTML Assignment 3</h1>
-
-    <!-- Table 1 -->
-    <table id="table-1" class="middle">
+    <table>
         <thead>
             <tr>
-                <th id="t11">Header 1</th>
-                <th id="t12" class="center">Header 2</th>
-                <th id="t13" class="right">Header 3</th>
+                <th>Roll Number</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td id="t11"><img src="https://via.placeholder.com/200x200" alt="Image 1"></td>
-                <td id="t12" class="center">Text Content 1</td>
-                <td id="t13"><img src="https://via.placeholder.com/200x200" alt="Image 2"></td>
+                <td>1</td>
+                <td>Alice</td>
             </tr>
             <tr>
-                <td id="t11"><img src="https://via.placeholder.com/200x200" alt="Image 3"></td>
-                <td id="t12" class="center">Text Content 2</td>
-                <td id="t13"><img src="https://via.placeholder.com/200x200" alt="Image 4"></td>
+                <td>2</td>
+                <td>Bob</td>
             </tr>
             <tr>
-                <td id="t11"><img src="https://via.placeholder.com/200x200" alt="Image 5"></td>
-                <td id="t12" class="center">Text Content 3</td>
-                <td id="t13"><img src="https://via.placeholder.com/200x200" alt="Image 6"></td>
+                <td>3</td>
+                <td>Charlie</td>
             </tr>
         </tbody>
     </table>
 
-    <!-- List of medias heading -->
     <h2>List of medias</h2>
 
-    <!-- Ordered List -->
     <ol>
-        <li><img src="https://picsum.photos/id/123/200/300" alt="Sample Image"></li>
-        <li>
+        <li class="media-item">
+            <img src="https://picsum.photos/id/123/200/300" alt="Sample image">
+        </li>
+        <li class="media-item">
             <video controls>
                 <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </li>
-        <li>
+        <li class="media-item">
             <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
