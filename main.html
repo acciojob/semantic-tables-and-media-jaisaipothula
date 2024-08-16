@@ -3,74 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media List and Table</title>
+    <title>Semantic Table and Media</title>
     <style>
+        /* Inline CSS for basic styling */
         body {
             font-family: Arial, sans-serif;
-            width: 1100px;
-            margin: 0 auto;
-        }
-        .imageContainer img {
-            max-width: 100%;
-            height: auto;
+            margin: 20px;
+            background-color: #f4f4f4;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: #fff;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: center;
+            text-align: left;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
         }
         ol {
-            margin: 0;
-            padding: 0;
-            list-style-type: decimal;
+            margin: 20px 0;
         }
-        ol li {
-            margin-bottom: 10px;
+        img, video, audio {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
-    <!-- Table with semantic structure -->
+    <!-- Semantic Table -->
     <table>
         <thead>
             <tr>
-                <th style="width: 200px;">First Column</th>
-                <th style="width: 600px;">Middle Column</th>
-                <th style="width: 200px;">Last Column</th>
+                <th>Roll Number</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
-                <td>Text Content</td>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>001</td>
+                <td>John Doe</td>
             </tr>
             <tr>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
-                <td>Text Content</td>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>002</td>
+                <td>Jane Smith</td>
             </tr>
             <tr>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
-                <td>Text Content</td>
-                <td><img src="https://via.placeholder.com/200" alt="Placeholder Image"></td>
+                <td>003</td>
+                <td>Emily Johnson</td>
             </tr>
         </tbody>
     </table>
 
-    <!-- Heading for the list -->
-    <h2>List of medias</h2>
+    <!-- Heading for Media List -->
+    <h2>List of Media</h2>
 
-    <!-- Ordered List with media items -->
+    <!-- Ordered List with Media Items -->
     <ol>
         <li>
             <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
@@ -84,10 +76,9 @@
         <li>
             <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-                Your browser does not support the audio element.
+                Your browser does not support the audio tag.
             </audio>
         </li>
     </ol>
-
 </body>
 </html>
