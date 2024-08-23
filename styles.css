@@ -5,14 +5,24 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Heading Styling */
-h2 {
-    font-size: 1.5em;
-    color: #333;
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-/* Ordered List Styling */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Media List Styling */
 ol {
     padding-left: 20px;
 }
@@ -21,7 +31,6 @@ ol li {
     margin: 20px 0;
 }
 
-/* Media Elements Styling */
 img, video, audio {
     max-width: 100%;
     height: auto;
